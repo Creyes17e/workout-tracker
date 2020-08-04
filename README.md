@@ -1,6 +1,6 @@
-## Workout-Tracker -- [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://shields.io/)
+# Workout-Tracker -- [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://shields.io/)
 
-# Live Site
+## Live Site
 
 ## Description
 
