@@ -27,6 +27,8 @@ Created a repo which included a gitignore. Ran npm install.
 
 ## Credits
 
+Activities in Unit 17,Mongoosejs,Stack Overflow, Google Fu, Bootcamp Instructor, TA's
+
 ## License
 
 License:MIT
