@@ -25,17 +25,19 @@ A consumer will reach their fitness goals quicker when they track their workout 
 
 ## Installation
 
-Created a repo which included a gitignore. Ran npm install.
+Created a repo which included a gitignore. Ran npm install and npm install dotenv.
 
 ## Credits
 
-Activities in Unit 17,Mongoosejs,Stack Overflow, Google Fu, Bootcamp Instructor, TA's
+Activities in Unit 17,MongoAtlas video, Mongoosejs,Stack Overflow, Google Fu, Bootcamp Instructor, TA's
 
 ## License
 
 License:MIT
 
 ## Usage
+
+Create and track your daily workouts!
 
 ## Tests
 
