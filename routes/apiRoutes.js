@@ -8,8 +8,8 @@ module.exports = (app) => {
       .find({})
       .then((dbWorkout) => {
         dbWorkout.forEach((workout) => {
-          const total = 0;
-          console.log("what is", workout.exercises);
+          var total = 0;
+          // console.log("what is", workout.exercises);
           workout.exercises.forEach((exercise) => {
             total += exercise.duration;
           });
@@ -51,6 +51,7 @@ module.exports = (app) => {
   app.get("/api/workouts/range", (req, res) => {
     db.workout
       .find({})
+      // .limit(3)
       .then((dbWorkout) => {
         console.log("all workouts", dbWorkout);
         res.json(dbWorkout);
