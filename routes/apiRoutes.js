@@ -1,10 +1,20 @@
 const db = require("../models");
+const { workout } = require("../models");
 
 module.exports = (app) => {
+  //gets all workouts including duration for resistance workouts
   app.get("/api/workouts", (req, res) => {
     db.workout
       .find({})
       .then((dbWorkout) => {
+        dbWorkout.forEach((workout) => {
+          const total = 0;
+          console.log("what is", workout.exercises);
+          workout.exercises.forEach((exercise) => {
+            total += exercise.duration;
+          });
+          workout.totalDuration = total;
+        });
         res.json(dbWorkout);
       })
       .catch((err) => {
