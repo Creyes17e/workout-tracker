@@ -10,7 +10,7 @@ A consumer will reach their fitness goals quicker when they track their workout 
 
 ## Image
 
-![site image]()
+![site image](./public/img/workout.JPG)
 
 ## Table of Contents
 
