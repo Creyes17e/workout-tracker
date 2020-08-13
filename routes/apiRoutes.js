@@ -37,7 +37,7 @@ module.exports = (app) => {
     db.workout
       .findByIdAndUpdate(
         params.id,
-        //$inc includes total duration in database
+        //$inc adds on total duration in database
         { $inc: { totalDuration: body.duration }, $push: { exercises: body } },
         { new: true }
       )
