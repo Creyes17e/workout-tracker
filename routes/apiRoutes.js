@@ -37,7 +37,7 @@ module.exports = (app) => {
     db.workout
       .findByIdAndUpdate(
         params.id,
-        { $inc: { totalDuration: body.duration }, $push: { exercises: body } },
+        { $push: { exercises: body } },
         { new: true }
       )
       .then((dbWorkout) => {
@@ -51,9 +51,8 @@ module.exports = (app) => {
   app.get("/api/workouts/range", (req, res) => {
     db.workout
       .find({})
-      // .limit(3)
       .then((dbWorkout) => {
-        console.log("all workouts", dbWorkout);
+        // console.log("all workouts", dbWorkout);
         res.json(dbWorkout);
       })
       .catch((err) => {
