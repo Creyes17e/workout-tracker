@@ -37,7 +37,8 @@ module.exports = (app) => {
     db.workout
       .findByIdAndUpdate(
         params.id,
-        { $push: { exercises: body } },
+        //$inc includes total duration in database
+        { $inc: { totalDuration: body.duration }, $push: { exercises: body } },
         { new: true }
       )
       .then((dbWorkout) => {
